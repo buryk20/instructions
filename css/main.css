@@ -1026,8 +1026,9 @@ label {
 @media (max-width: 491px) {
   .stages-work-solor__line-r::before {
     max-width: 165px;
-    height: 366px;
+    height: 340px;
     right: -40px;
+    top: 118px;
     display: block;
     border-top-right-radius: 40px;
     border-bottom-right-radius: 40px;
@@ -1054,8 +1055,9 @@ label {
 @media (max-width: 491px) {
   .stages-work-solor__line-l::before {
     max-width: 165px;
-    height: 367px;
+    height: 341px;
     left: -40px;
+    top: 118px;
     display: block;
     border-top-right-radius: 40px;
     border-bottom-right-radius: 40px;
@@ -1083,6 +1085,12 @@ label {
 .stages-work-solor__img {
   margin-bottom: 36px;
   position: relative;
+}
+
+@media (max-width: 491px) {
+  .stages-work-solor__img {
+    margin-bottom: 10px;
+  }
 }
 
 .stages-work-solor__text-main {
@@ -1130,5 +1138,173 @@ label {
       justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.specialists-lp-solar {
+  margin-bottom: 30px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  max-width: 1500px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 1516px) {
+  .specialists-lp-solar {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+@media (max-width: 960px) {
+  .specialists-lp-solar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.specialists-lp-solar__text-wrp {
+  padding-left: 37px;
+  line-height: 24px;
+}
+
+@media (max-width: 960px) {
+  .specialists-lp-solar__text-wrp {
+    padding-left: 0;
+  }
+}
+
+.specialists-lp-solar__text {
+  margin-bottom: 25px;
+}
+
+@media (max-width: 960px) {
+  .specialists-lp-solar__text {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
+
+.specialists-lp-solar__btn {
+  padding: 8px 18px;
+  color: #ffffff;
+  background-color: #f36c21;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+@media (max-width: 960px) {
+  .specialists-lp-solar__btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.comment-solor {
+  background-color: #EEEEEE;
+}
+
+.comment-solor__wrp {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  max-width: 1500px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+@media (max-width: 1516px) {
+  .comment-solor__wrp {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.comment-solor__tetx-title {
+  padding-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.comment-solor__text-wrp {
+  max-width: 353px;
+  padding-left: 26px;
+  padding-right: 26px;
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+.comment-solor__img-wrp {
+  margin-right: 11px;
+  background-color: #c4c4c4;
+  border-radius: 50%;
+  width: 62px;
+  height: 62px;
+}
+
+.comment-solor__img-pos {
+  padding-top: 30px;
+  margin-bottom: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.comment-solor__name {
+  padding-left: 5px;
+  margin-bottom: 6px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.comment-solor__text {
+  margin-bottom: 21px;
+  line-height: 24px;
+}
+
+.comment-solor__like-wrp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 14px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.comment-solor__like {
+  color: #329138;
+}
+
+.comment-solor__diz-like {
+  color: #E25750;
+}
+
+.comment-solor__img {
+  margin-right: 7px;
 }
 /*# sourceMappingURL=main.css.map */

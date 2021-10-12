@@ -524,8 +524,9 @@
       @include snakeSolor {
         & {
           max-width: 165px;
-          height: 366px;
+          height: 340px;
           right: -40px;
+          top: 118px;
           display: block;
           border-top-right-radius: 40px;
           border-bottom-right-radius: 40px;
@@ -549,8 +550,9 @@
       @include snakeSolor {
         & {
           max-width: 165px;
-          height: 367px;
+          height: 341px;
           left: -40px;
+          top: 118px;
           display: block;
           border-top-right-radius: 40px;
           border-bottom-right-radius: 40px;
@@ -569,6 +571,11 @@
   &__img {
     margin-bottom: 36px;
     position: relative;
+    @include snakeSolor {
+      & {
+        margin-bottom: 10px;
+      }
+    }
   }
   &__text-main {
     margin-bottom: 71px;
@@ -604,5 +611,116 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+  }
+}
+
+.specialists-lp-solar {
+  margin-bottom: 30px;
+  @include textMainSol;
+  @include pageGredSolor;
+  @include startAdaptiveSmol {
+    & {
+      @include paddingMob;
+    }
+  }
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  @include bigMobileWidth {
+    & {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+  &__text-wrp {
+    padding-left: 37px;
+    line-height: 24px;
+    @include bigMobileWidth {
+      & {
+        padding-left: 0;
+      }
+    }
+  }
+  &__text {
+    margin-bottom: 25px;
+    @include bigMobileWidth {
+      & {
+        margin-bottom: 20px;
+        text-align: center;
+      }
+    }
+  }
+  &__btn {
+    @include btn;
+    @include bigMobileWidth {
+      & {
+        display: block;
+        @include marCenter;
+      }
+    }
+  }
+}
+
+.comment-solor {
+  background-color: #EEEEEE;
+  &__wrp {
+    @include textMainSol;
+    @include pageGredSolor;
+    @include startAdaptiveSmol {
+      & {
+        @include paddingMob;
+      }
+    }
+  }
+  &__tetx-title {
+    padding-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 24px;
+  }
+  &__text-wrp {
+    max-width: 353px;
+    padding-left: 26px;
+    padding-right: 26px;
+    background-color: #ffffff;
+    border-radius: 8px;
+  }
+  &__img-wrp {
+    margin-right: 11px;
+    background-color: $greyLine;
+    border-radius: 50%;
+    width: 62px;
+    height: 62px;
+  }
+  &__img-pos {
+    padding-top: 30px;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+  }
+  &__name {
+    padding-left: 5px;
+    margin-bottom: 6px;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  &__text {
+    margin-bottom: 21px;
+    line-height: 24px;
+  }
+  &__like-wrp {
+    display: flex;
+    font-size: 14px;
+    align-items: flex-start;
+  }
+  &__like {
+    color: #329138;
+  }
+  &__diz-like {
+    color: #E25750;
+  }
+  &__img {
+    margin-right: 7px;
   }
 }
