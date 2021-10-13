@@ -41,11 +41,18 @@ window.onload = function() {
         $(".btn-js").click(function() {
           const $a = $(".pop-up-solor-pos-act");
           $a.fadeIn();
-        })
-      })
+        });
+      });
     
     } else if (event.target.classList.contains("pop-up-solor__btn") || event.target.classList.contains("pop-up-solor-pos-act")) {
       popup.remove("active-solar")
+      $( document ).ready(function() {
+        $(".pop-up-solor-pos-act").click(function () {
+          const $a = $(".pop-up-solor-pos-act");
+          $a.fadeOut();
+        });
+      });
+      
     }
   }
 }
