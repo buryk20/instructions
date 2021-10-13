@@ -19,6 +19,7 @@ window.onload = function() {
         if ((scrollY > animItemOffset - animItemPoint) && scrollY < (animItemOffset + animItemHeight)) {
           animItem.classList.add('_active');
         } else {
+          if (!animItem.classList.contains('_no-anim-solar'))
           animItem.classList.remove('_active');
         }
       }
