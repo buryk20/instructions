@@ -2,6 +2,7 @@
 @import "_variables_mixin.scss";
 @import "_styleAdaptive.scss";
 @import "_styleForBannerNew";
+@import "_popOpSolor";
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 
@@ -663,6 +664,7 @@
 }
 
 .comment-solor {
+  padding-bottom: 70px;
   background-color: #EEEEEE;
   &__wrp {
     @include textMainSol;
@@ -683,8 +685,14 @@
     max-width: 353px;
     padding-left: 26px;
     padding-right: 26px;
+    margin-bottom: 8px;
     background-color: #ffffff;
     border-radius: 8px;
+    @include mobileWidth {
+      & {
+        padding-right: 10px;
+      }
+    }
   }
   &__img-wrp {
     margin-right: 11px;
@@ -698,6 +706,11 @@
     margin-bottom: 25px;
     display: flex;
     align-items: center;
+    @include mobileWidth {
+      & {
+        margin-bottom: 20px;
+      }
+    }
   }
   &__name {
     padding-left: 5px;
@@ -708,8 +721,14 @@
   &__text {
     margin-bottom: 21px;
     line-height: 24px;
+    @include mobileWidth {
+      & {
+        line-height: 16px;
+      }
+    }
   }
   &__like-wrp {
+    margin-bottom: 8px;
     display: flex;
     font-size: 14px;
     align-items: flex-start;
@@ -722,5 +741,13 @@
   }
   &__img {
     margin-right: 7px;
+  }
+  &__like-pos {
+    padding-bottom: 19px;
+  }
+  &__wrp-cont {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
   }
 }

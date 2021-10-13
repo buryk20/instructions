@@ -16,9 +16,10 @@
     />
     <link rel="stylesheet" href="css/main.css" />
     <script src="js/main.js"></script>
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   </head>
   <body>
-    <main">
+    <main id="main">
       <article class="ban-byr">
         <section class="ban-byr__img">
           <img class="ban-byr__img-wrp" src="img/solorPowerPlantBan.png" alt="Солнечная электростанция">
@@ -81,7 +82,7 @@
                 </p>
               </div>
               <div>
-                <img src="img/greenPower.png" alt="Экологическая энергия">
+                <img src="img/invertorSolar.png" alt="Экологическая энергия">
               </div>
             </div>
           </div>
@@ -97,7 +98,7 @@
           </h3>
           <div class="turnkey-power-plant__lineOr"></div>
           <p class="turnkey-power-plant__text">Получить бесплатную консультацию наших специалистов вы можете оставить заявку</p>
-          <button class="turnkey-power-plant__btn"><a href="#">Подробнее</a></button>
+          <button class="turnkey-power-plant__btn btn-js">Подробнее</button>
         </div>
       </article>
       <article class="type-solor-station">
@@ -126,7 +127,7 @@
               <p>В темное время суток, когда солнечные панели не могут вырабатывать электроэнергию, инвертор направляет электрический ток от аккумуляторов на нужды потребителя.
               </p>
             </div>
-            <button class="type-solor-station__btn">Заказать</button>
+            <button class="type-solor-station__btn btn-js">Заказать</button>
           </div>
         </div>
         <div class="type-solor-station__wrp-l">
@@ -144,7 +145,7 @@
               <p>Станция работает  от стандартных линий электропередач. Аккумуляторные батареи через инвертор заряжаются электроэнергией от общей сети. В случаях отключения электроэнергии инвертор направляет электрический ток от аккумуляторов на нужды потребителя. 
               </p>
             </div>
-            <button class="type-solor-station__btn">Заказать</button>
+            <button class="type-solor-station__btn btn-js">Заказать</button>
           </div>
           <div class="type-solor-station__img-wrp">
             <img class="type-solor-station__img" src="img/esAvtonom.png" alt="ЭС автономная">
@@ -175,7 +176,7 @@
                 В темное время суток, когда генерация от фотомодулей невозможна, потребитель получает энергию из общей сети.
               </p>
             </div>
-            <button class="type-solor-station__btn">Заказать</button>
+            <button class="type-solor-station__btn btn-js">Заказать</button>
           </div>
         </div>
         <div class="type-solor-station__wrp-l">
@@ -193,7 +194,7 @@
               <p>Инвертор получает постоянный ток от солнечных панелей, преобразовывает его в переменный (220) и отправляет потребителю. 
               </p>
             </div>
-            <button class="type-solor-station__btn">Заказать</button>
+            <button class="type-solor-station__btn btn-js">Заказать</button>
           </div>
           <div class="type-solor-station__img-wrp">
             <img class="type-solor-station__img" src="img/compensation-solor-img.png" alt="ЭС автономная">
@@ -248,7 +249,7 @@
             </div>
           </div>
         </div>
-        <button class="type-solor-station__btn">Заказать</button>
+        <button class="type-solor-station__btn btn-js">Заказать</button>
       </article>
       <article class="stages-work-solor">
         <h6 class="stages-work-solor__text-main">Автономная солнечная электростанция «под ключ» - этапы работ:</h6>
@@ -261,38 +262,38 @@
             </div>
           </div>
           <div class="stages-work-solor__wrp-cont stages-work-solor__line-l">
-            <img class="stages-work-solor__img" src="icon/car-icon-solor.svg" alt="Выезд проектировщика на объект">
+            <img class="stages-work-solor__img" src="icon/invist-icon-solor.svg" alt="Выезд проектировщика на объект">
             <div class="stages-work-solor__circle"></div>
             <div class="stages-work-solor__text-wrp">
-              <p class="stages-work-solor__text">Выезд проектировщика на объект</p>
+              <p class="stages-work-solor__text">Составление экономического обоснования и сроков окупаемости инвестиций.</p>
             </div>
           </div>
           <div class="stages-work-solor__wrp-cont stages-work-solor__line-r">
-            <img class="stages-work-solor__img" src="icon/car-icon-solor.svg" alt="Выезд проектировщика на объект">
+            <img class="stages-work-solor__img" src="icon/prodyctio-icon-solar.svg" alt="Выезд проектировщика на объект">
             <div class="stages-work-solor__circle"></div>
             <div class="stages-work-solor__text-wrp">
-              <p class="stages-work-solor__text">Выезд проектировщика на объект</p>
+              <p class="stages-work-solor__text">Разработка и утверждение проектно-сметной документации. </p>
             </div>
           </div>
           <div class="stages-work-solor__wrp-cont stages-work-solor__line-l">
-            <img class="stages-work-solor__img" src="icon/car-icon-solor.svg" alt="Выезд проектировщика на объект">
+            <img class="stages-work-solor__img" src="icon/contract-icon-solar.svg" alt="Выезд проектировщика на объект">
             <div class="stages-work-solor__circle"></div>
             <div class="stages-work-solor__text-wrp">
-              <p class="stages-work-solor__text">Выезд проектировщика на объект</p>
+              <p class="stages-work-solor__text">Заключение договора о предоставлении услуг с указанием сроков выполнения каждого этапа работ.</p>
             </div>
           </div>
           <div class="stages-work-solor__wrp-cont stages-work-solor__line-r">
-            <img class="stages-work-solor__img" src="icon/car-icon-solor.svg" alt="Выезд проектировщика на объект">
+            <img class="stages-work-solor__img" src="icon/ua-icon-solar.svg" alt="Выезд проектировщика на объект">
             <div class="stages-work-solor__circle"></div>
             <div class="stages-work-solor__text-wrp">
-              <p class="stages-work-solor__text">Выезд проектировщика на объект</p>
+              <p class="stages-work-solor__text">Оформление необходимой разрешительной документации, согласно действующему законодательству и нормативным актам, принятым в Украине.</p>
             </div>
           </div>
           <div class="stages-work-solor__wrp-cont-end">
-            <img class="stages-work-solor__img" src="icon/car-icon-solor.svg" alt="Выезд проектировщика на объект">
+            <img class="stages-work-solor__img" src="icon/panel-icon-solar.svg" alt="Выезд проектировщика на объект">
             <div class="stages-work-solor__circle"></div>
             <div class="stages-work-solor__text-wrp">
-              <p class="stages-work-solor__text">Выезд проектировщика на объект</p>
+              <p class="stages-work-solor__text">Монтаж оборудования, сдача объекта и ввод в эксплуатацию.</p>
             </div>
           </div>
         </div>
@@ -303,7 +304,7 @@
           <p class="specialists-lp-solar__text">
             Специалисты  LogicPower качественно и в срок выполняют строительство СЭС в Украине «под ключ».  Лучшая рекомендация, какая вам нужна солнечная электростанция – отзывы довольных клиентов о нашей работе
           </p>
-          <button class="specialists-lp-solar__btn">Заказать</button>
+          <button class="specialists-lp-solar__btn btn-js">Заказать</button>
         </div>
       </article>
       <article class="comment-solor">
@@ -311,36 +312,145 @@
           <h2 class="comment-solor__tetx-title">
             Отзывы
           </h2>
-          <div class="comment-solor__text-wrp">
-            <div class="comment-solor__img-pos">
-              <div class="comment-solor__img-wrp">
-                <img src="" alt="Покупатель">
-              </div>
-              <div>
-                <p class="comment-solor__name">Виктор Иванов</p>
-                <img src="icon/stars-solor-icon.svg" alt="рейтинг">
-              </div>
-            </div>
-            <p class="comment-solor__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit </p>
-            <div>
-              <div class="comment-solor__like-wrp">
-                <img class="comment-solor__img" src="icon/sad-face-in-rounded-square-solar.svg" alt="Понравилось">
+          <div class="comment-solor__wrp-cont">
+            <div class="comment-solor__text-wrp">
+              <div class="comment-solor__img-pos">
+                <div class="comment-solor__img-wrp">
+                  <img src="" alt="Покупатель">
+                </div>
                 <div>
-                  <p class="comment-solor__like">Понравилось: </p>
-                  <p>Количество циклов больше чем у AGM аккумуляторов.</p>
+                  <p class="comment-solor__name">Виктор Иванов</p>
+                  <img src="icon/stars-solor-icon.svg" alt="рейтинг">
                 </div>
               </div>
-              <div class="comment-solor__like-wrp">
-                <img class="comment-solor__img" src="icon/sad-face-in-rounded-square-diz-solor.png" alt="Не понравилось">
-                <div>
-                  <p class="comment-solor__diz-like">Недостатки: </p>
-                  <p>Количество циклов больше чем у AGM аккумуляторов.</p>
+              <p class="comment-solor__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit </p>
+              <div class="comment-solor__like-pos">
+                <div class="comment-solor__like-wrp">
+                  <img class="comment-solor__img" src="icon/sad-face-in-rounded-square-solar.svg" alt="Понравилось">
+                  <div>
+                    <p class="comment-solor__like">Понравилось: </p>
+                    <p>Количество циклов больше чем у AGM аккумуляторов.</p>
+                  </div>
                 </div>
-              </div>    
+                <div class="comment-solor__like-wrp">
+                  <img class="comment-solor__img" src="icon/sad-face-in-rounded-square-diz-solor.png" alt="Не понравилось">
+                  <div>
+                    <p class="comment-solor__diz-like">Недостатки: </p>
+                    <p>Количество циклов больше чем у AGM аккумуляторов.</p>
+                  </div>
+                </div>    
+              </div>
             </div>
-          </div>
+            <div class="comment-solor__text-wrp">
+              <div class="comment-solor__img-pos">
+                <div class="comment-solor__img-wrp">
+                  <img src="" alt="Покупатель">
+                </div>
+                <div>
+                  <p class="comment-solor__name">Виктор Иванов</p>
+                  <img src="icon/stars-solor-icon.svg" alt="рейтинг">
+                </div>
+              </div>
+              <p class="comment-solor__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit </p>
+              <div class="comment-solor__like-pos">
+                <div class="comment-solor__like-wrp">
+                  <img class="comment-solor__img" src="icon/sad-face-in-rounded-square-solar.svg" alt="Понравилось">
+                  <div>
+                    <p class="comment-solor__like">Понравилось: </p>
+                    <p>Количество циклов больше чем у AGM аккумуляторов.</p>
+                  </div>
+                </div>
+                <div class="comment-solor__like-wrp">
+                  <img class="comment-solor__img" src="icon/sad-face-in-rounded-square-diz-solor.png" alt="Не понравилось">
+                  <div>
+                    <p class="comment-solor__diz-like">Недостатки: </p>
+                    <p>Количество циклов больше чем у AGM аккумуляторов.</p>
+                  </div>
+                </div>    
+              </div>
+            </div>
+            <div class="comment-solor__text-wrp">
+              <div class="comment-solor__img-pos">
+                <div class="comment-solor__img-wrp">
+                  <img src="" alt="Покупатель">
+                </div>
+                <div>
+                  <p class="comment-solor__name">Виктор Иванов</p>
+                  <img src="icon/stars-solor-icon.svg" alt="рейтинг">
+                </div>
+              </div>
+              <p class="comment-solor__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit </p>
+              <div class="comment-solor__like-pos">
+                <div class="comment-solor__like-wrp">
+                  <img class="comment-solor__img" src="icon/sad-face-in-rounded-square-solar.svg" alt="Понравилось">
+                  <div>
+                    <p class="comment-solor__like">Понравилось: </p>
+                    <p>Количество циклов больше чем у AGM аккумуляторов.</p>
+                  </div>
+                </div>
+                <div class="comment-solor__like-wrp">
+                  <img class="comment-solor__img" src="icon/sad-face-in-rounded-square-diz-solor.png" alt="Не понравилось">
+                  <div>
+                    <p class="comment-solor__diz-like">Недостатки: </p>
+                    <p>Количество циклов больше чем у AGM аккумуляторов.</p>
+                  </div>
+                </div>    
+              </div>
+            </div>
+            <div class="comment-solor__text-wrp">
+              <div class="comment-solor__img-pos">
+                <div class="comment-solor__img-wrp">
+                  <img src="" alt="Покупатель">
+                </div>
+                <div>
+                  <p class="comment-solor__name">Виктор Иванов</p>
+                  <img src="icon/stars-solor-icon.svg" alt="рейтинг">
+                </div>
+              </div>
+              <p class="comment-solor__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit </p>
+              <div class="comment-solor__like-pos">
+                <div class="comment-solor__like-wrp">
+                  <img class="comment-solor__img" src="icon/sad-face-in-rounded-square-solar.svg" alt="Понравилось">
+                  <div>
+                    <p class="comment-solor__like">Понравилось: </p>
+                    <p>Количество циклов больше чем у AGM аккумуляторов.</p>
+                  </div>
+                </div>
+                <div class="comment-solor__like-wrp">
+                  <img class="comment-solor__img" src="icon/sad-face-in-rounded-square-diz-solor.png" alt="Не понравилось">
+                  <div>
+                    <p class="comment-solor__diz-like">Недостатки: </p>
+                    <p>Количество циклов больше чем у AGM аккумуляторов.</p>
+                  </div>
+                </div>    
+              </div>
+            </div>
+          </div>  
         </div>  
       </article>
+      <article class="pop-up-solor-pos-act">
+        <article class="pop-up-solor">
+          <div class="pop-up-solor__wrp-btn">
+            <p class="pop-up-solor__order">Заказ</p>
+            <button class="pop-up-solor__btn"></button>
+          </div>
+          <div class="pop-up-solor__line"></div>
+          <div class="pop-up-solor__wrp-cont">
+            <p class="pop-up-solor__text">Менеджер свяжется с Вами для уточнения деталей заказа в ближайшее время.</p>
+            <div>
+              <form class="pop-up-solor__form-wrp" action="#">
+                <input class="pop-up-solor__input" type="text" placeholder="Имя Фамилия">
+                <input class="pop-up-solor__input" type="tel" placeholder="+8000000000">
+                <input class="pop-up-solor__input" type="text" placeholder="Сообщение">
+                <input class="pop-up-solor__btn-input" type="button" value="Заказать">
+              </form>
+              <p class="pop-up-solor__text">*Ваши данные не будут переданы третьим лицам</p>
+            </div>
+          </div>
+        </article>
+      </article>  
     </main>
   </body>
 </html>
+  
+  

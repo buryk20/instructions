@@ -1,4 +1,7 @@
+
+
 window.onload = function() {
+  
     const animItems = document.querySelectorAll('.js-div');
     if(animItems.length > 0) {
       window.addEventListener('scroll', animOnScroll);
@@ -30,4 +33,19 @@ window.onload = function() {
     }
   }  
   animOnScroll();
+  main.onclick = function (event) {
+    const popup = document.querySelector(".pop-up-solor-pos-act").classList;
+    if (event.target.classList.contains("btn-js")) {
+      popup.add("active-solar");
+      $( document ).ready(function() {
+        $(".btn-js").click(function() {
+          const $a = $(".pop-up-solor-pos-act");
+          $a.fadeIn();
+        })
+      })
+    
+    } else if (event.target.classList.contains("pop-up-solor__btn") || event.target.classList.contains("pop-up-solor-pos-act")) {
+      popup.remove("active-solar")
+    }
+  }
 }
