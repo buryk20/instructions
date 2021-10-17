@@ -1,59 +1,37 @@
 
 
-window.onload = function() {
-  
-    const animItems = document.querySelectorAll('.js-div');
-    if(animItems.length > 0) {
-      window.addEventListener('scroll', animOnScroll);
-      function animOnScroll() {
-        for (let index = 0; index < animItems.length; index++ ){
-          const animItem = animItems[index];
-          const animItemHeight = animItem.offsetHeight;
-          const animItemOffset = offset(animItem).top;
-          const animStart = 4;
-        
-        let animItemPoint = window.innerHeight - animItemHeight / animStart;
-        if(animItemHeight > window.innerHeight) {
-          animItemPoint = window.innerHeight - window.innerHeight / animStart;
-        }
-        if ((scrollY > animItemOffset - animItemPoint) && scrollY < (animItemOffset + animItemHeight)) {
-          animItem.classList.add('_active');
-        } else {
-          if (!animItem.classList.contains('_no-anim-solar'))
-          animItem.classList.remove('_active');
-        }
+window.onload = function () {
+  var instrDow = document.querySelectorAll(".dev-inst-js");
+  instrDow.forEach((el) => {
+    el.onclick = function (e) {
+      const wrapper = el.closest(".instr-main-cont__wrp");
+      const list = wrapper.querySelector(".instr-pup-up-downloads");
+      const arrow = wrapper.querySelector(".instr-main-cont__nav-details-img");
+      const status = wrapper.querySelector(".instr-main-cont__nav-details");
+      console.log(arrow);
+      const currBtn = el.dataset.toggledText;
+      console.log(currBtn);
+      const nextText = currBtn;
+      // el.dataset.toggledText = el.innerText;
+      // el.innerText = nextText;
+      // el.innerText = currBtn;
+      console.log(nextText);
+
+
+      if (list.hasAttribute("style")) {
+        list.removeAttribute("style");
+        status.innerText = "Развернуть"
+        arrow.style.transform = "rotate(90deg)"
+
+      } else {
+        // el.style.transform = 'rotate(180deg)';
+        list.style.opacity = "1";
+        list.style.maxHeight = "500px";
+        list.style.maxWidth = "100%"
+        list.style.display = "block"
+        arrow.style.transform = "rotate(-90deg)"
+        status.innerText = "Свернуть"
       }
     }
-    function offset(el) {
-      const rect = el.getBoundingClientRect(),
-        scrollLeft = window.scrollY || document.documentElement.scrollLeft,
-        scrollTop = window.scrollY || document.documentElement.scrollTop;
-      return {
-        top: rect.top + scrollTop, left: rect.left + scrollLeft
-      }
-    }
-  }  
-  animOnScroll();
-  main.onclick = function (event) {
-    const popup = document.querySelector(".pop-up-solor-pos-act").classList;
-    if (event.target.classList.contains("btn-js")) {
-      popup.add("active-solar");
-      $( document ).ready(function() {
-        $(".btn-js").click(function() {
-          const $a = $(".pop-up-solor-pos-act");
-          $a.fadeIn();
-        });
-      });
-    
-    } else if (event.target.classList.contains("pop-up-solor__btn") || event.target.classList.contains("pop-up-solor-pos-act")) {
-      popup.remove("active-solar")
-      $( document ).ready(function() {
-        $(".pop-up-solor-pos-act").click(function () {
-          const $a = $(".pop-up-solor-pos-act");
-          $a.fadeOut();
-        });
-      });
-      
-    }
-  }
+  })
 }
