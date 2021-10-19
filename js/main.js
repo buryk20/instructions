@@ -15,22 +15,36 @@ window.onload = function () {
       // el.dataset.toggledText = el.innerText;
       // el.innerText = nextText;
       // el.innerText = currBtn;
-      console.log(nextText);
+      // console.log(nextText);
+      // console.log($( window ).width())
 
 
       if (list.hasAttribute("style")) {
+        // setTimeout(() => list.style.opacity = "0", 100)
         list.removeAttribute("style");
-        status.innerText = "Развернуть"
-        arrow.style.transform = "rotate(90deg)"
+        
+        status.innerText = "Развернуть";
+        if($( window ).width() <= "680") {
+          arrow.style.transform = "rotate(0deg)";
+        } else {
+          arrow.style.transform = "rotate(90deg)";
+        }
+        
+        // setTimeout(() => list.style.opacity = "0", 1000)
 
       } else {
-        // el.style.transform = 'rotate(180deg)';
         list.style.opacity = "1";
         list.style.maxHeight = "500px";
-        list.style.maxWidth = "100%"
-        list.style.display = "block"
-        arrow.style.transform = "rotate(-90deg)"
-        status.innerText = "Свернуть"
+        list.style.maxWidth = "100%";
+        list.style.display = "block";
+        
+        status.innerText = "Свернуть";
+        if($( window ).width() <= "680") {
+          arrow.style.transform = "rotate(90deg)";
+        } else {
+          arrow.style.transform = "rotate(-90deg)";
+        }
+        // setTimeout(() => list.style.opacity = "1", 1000)
       }
     }
   })

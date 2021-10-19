@@ -172,6 +172,11 @@
         grid-template-columns: 0.53fr 1fr 0.8fr 0.6fr;
       }
     }
+    @include mobileWidth {
+      & {
+        grid-template-columns: 0.53fr 1fr 0.8fr 0.4fr;
+      }
+    }
   }
   &__name-white {
     min-height: 43px;
@@ -179,9 +184,15 @@
     grid-template-columns: 0.53fr 1fr 1.4fr 1.2fr 0.6fr;
     align-items: center;
     background-color: #ffffff;
+    word-wrap: break-word;
     @include bigMobileWidth {
       & {
         grid-template-columns: 0.53fr 1fr 0.8fr 0.6fr;
+      }
+    }
+    @include mobileWidth {
+      & {
+        grid-template-columns: 0.53fr 1fr 0.8fr 0.4fr;
       }
     }
   }
@@ -191,9 +202,15 @@
     grid-template-columns: 0.53fr 1fr 1.4fr 1.2fr 0.6fr;
     align-items: center;
     background-color: #f6f6f6;
+    word-wrap: break-word;
     @include bigMobileWidth {
       & {
         grid-template-columns: 0.53fr 1fr 0.8fr 0.6fr;
+      }
+    }
+    @include mobileWidth {
+      & {
+        grid-template-columns: 0.53fr 1fr 0.8fr 0.4fr;
       }
     }
   }
@@ -209,23 +226,43 @@
         }
       }
     }
+    @include blockImgStatic {
+      & {
+        padding-left: 16px;
+      }
+    }
   }
   &__nav-details {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     color: $mainColor;
+    @include mobileWidth {
+      & {
+        display: none;
+      }
+    }
   }
   &__nav-details-img {
     width: 11px;
     transform: rotate(90deg);
     cursor: pointer;
     transition: transform 0.6s;
+    @include mobileWidth {
+      & {
+        transform: rotate(0deg);
+      }
+    }
   }
   &__nav-details-main {
     display: flex;
     justify-content: center;
     position: relative;
+    @include mobileWidth {
+      & {
+        display: none;
+      }
+    }
     &::before {
       content: "";
       height: 19px;
@@ -234,6 +271,11 @@
       left: 0;
       position: absolute;
       background-color: #d1d1d1;
+      @include bigMobileWidth {
+        & {
+          // left: 33px;
+        }
+      }
     }
     &::after {
       content: "";
@@ -241,6 +283,30 @@
       width: 1px;
       top: 0;
       right: 0;
+      position: absolute;
+      background-color: #d1d1d1;
+      @include bigMobileWidth {
+        & {
+          display: none;
+        }
+      }
+    }
+  }
+  &__nav-details-main-mob {
+    display: none;
+    position: relative;
+    @include mobileWidth {
+      & {
+        display: block;
+        @include marCenter;
+      }
+    }
+    &::before {
+      content: "";
+      height: 19px;
+      width: 1px;
+      top: 0;
+      left: -23px;
       position: absolute;
       background-color: #d1d1d1;
     }
@@ -256,9 +322,9 @@
       left: 0;
       position: absolute;
       background-color: #d1d1d1;
-      @include smScreenWidth {
+      @include bigMobileWidth {
         & {
-          // display: none;
+          display: none;
         }
       }
     }
@@ -273,6 +339,11 @@
       left: -24px;
       position: absolute;
       background-color: #d1d1d1;
+      @include blockImgStatic {
+        & {
+          left: -15px;
+        }
+      }
     }
   }
   &__nav-detail-wrp {
@@ -300,16 +371,29 @@
       }
     }
   }
+  &__nav-category {
+    @include mobileWidth {
+      & {
+        max-width: 150px;
+      }
+    }
+  }
 }
 
 .instr-pup-up-downloads {
   opacity: 0;
   max-height: 0;
   padding-left: 51px;
-  max-width: 1014px;
+  max-width: 74%;
   // display: none;
   background-color: #ffffff;
-  transition: max-height 0.6s;
+  transition: max-height, opacity, 0.6s;
+  // transition: opacity 0.6s;
+  @include bigMobileWidth {
+    & {
+      padding-left: 16px;
+    }
+  }
   &__wrp {
     min-height: 43px;
     display: grid;
@@ -317,6 +401,11 @@
     align-items: center;
     color: #8a8a8a;
     text-align: center;
+    @include mobileWidth {
+      & {
+        grid-template-columns: 1.53fr 0.9fr 0.9fr;
+      }
+    }
   }
   &__line-vertically {
     position: relative;
@@ -339,8 +428,27 @@
       background-color: #d1d1d1;
     }
   }
+  &__data {
+    @include mobileWidth {
+      & {
+        display: none;
+      }
+    }
+  }
+  &__mob-ver {
+    @include mobileWidth {
+      & {
+        display: none;
+      }
+    }
+  }
   &__line-vertically-data {
     position: relative;
+    @include mobileWidth {
+      & {
+        display: none;
+      }
+    }
     &::before {
       content: "";
       height: 19px;
